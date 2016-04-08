@@ -64,8 +64,6 @@ std::string body_part_name (body_part bp)
         return _("left foot");
     case bp_foot_r:
         return _("right foot");
-    default:
-        return _("appendix");
     }
 }
 
@@ -96,8 +94,6 @@ std::string body_part_name_accusative (body_part bp)
         return pgettext("bodypart_accusative", "left foot");
     case bp_foot_r:
         return pgettext("bodypart_accusative", "right foot");
-    default:
-        return pgettext("bodypart_accusative", "appendix");
     }
 }
 
@@ -124,8 +120,6 @@ std::string encumb_text(body_part bp)
     case bp_foot_l:
     case bp_foot_r:
         return _("Running is slowed.");
-    default:
-        return _("It's inflamed.");
     }
 }
 
